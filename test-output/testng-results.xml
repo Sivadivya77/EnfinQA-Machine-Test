@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-21T10:11:26 IST" name="Suite" finished-at="2025-03-21T10:13:49 IST" duration-ms="142389">
+  <suite started-at="2025-06-06T09:40:43 IST" name="Suite" finished-at="2025-06-06T09:42:28 IST" duration-ms="105340">
     <groups>
     </groups>
-    <test started-at="2025-03-21T10:11:26 IST" name="Test" finished-at="2025-03-21T10:13:49 IST" duration-ms="142389">
+    <test started-at="2025-06-06T09:40:43 IST" name="Test" finished-at="2025-06-06T09:42:28 IST" duration-ms="105340">
       <class name="test.TC_001SignUpTest">
-        <test-method is-config="true" signature="reportiniatialization()[pri:0, instance:test.TC_001SignUpTest@79079097]" started-at="2025-03-21T10:11:25 IST" name="reportiniatialization" finished-at="2025-03-21T10:11:26 IST" duration-ms="1234" status="PASS">
+        <test-method is-config="true" signature="reportiniatialization()[pri:0, instance:test.TC_001SignUpTest@6f4a47c7]" started-at="2025-06-06T09:40:42 IST" name="reportiniatialization" finished-at="2025-06-06T09:40:43 IST" duration-ms="505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportiniatialization -->
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_001SignUpTest@79079097]" started-at="2025-03-21T10:11:26 IST" name="testDetails" finished-at="2025-03-21T10:11:26 IST" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_001SignUpTest@6f4a47c7]" started-at="2025-06-06T09:40:43 IST" name="testDetails" finished-at="2025-06-06T09:40:43 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_001SignUpTest@79079097]" started-at="2025-03-21T10:11:26 IST" name="lunchbrowser" finished-at="2025-03-21T10:11:33 IST" duration-ms="7092" status="PASS">
+        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_001SignUpTest@6f4a47c7]" started-at="2025-06-06T09:40:43 IST" name="lunchbrowser" finished-at="2025-06-06T09:40:54 IST" duration-ms="11073" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,25 +31,25 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchbrowser -->
-        <test-method signature="testSignUpButtonVisibility()[pri:0, instance:test.TC_001SignUpTest@79079097]" started-at="2025-03-21T10:11:33 IST" name="testSignUpButtonVisibility" finished-at="2025-03-21T10:11:34 IST" duration-ms="590" status="PASS">
+        <test-method signature="testSignUpButtonVisibility()[pri:0, instance:test.TC_001SignUpTest@6f4a47c7]" started-at="2025-06-06T09:40:54 IST" name="testSignUpButtonVisibility" finished-at="2025-06-06T09:40:55 IST" duration-ms="390" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignUpButtonVisibility -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_001SignUpTest@79079097]" started-at="2025-03-21T10:11:35 IST" name="browserclose" finished-at="2025-03-21T10:11:36 IST" duration-ms="935" status="PASS">
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_001SignUpTest@6f4a47c7]" started-at="2025-06-06T09:40:55 IST" name="browserclose" finished-at="2025-06-06T09:40:55 IST" duration-ms="235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
-        <test-method is-config="true" signature="reportclose()[pri:0, instance:test.TC_001SignUpTest@79079097]" started-at="2025-03-21T10:13:49 IST" name="reportclose" finished-at="2025-03-21T10:13:50 IST" duration-ms="1335" status="PASS">
+        <test-method is-config="true" signature="reportclose()[pri:0, instance:test.TC_001SignUpTest@6f4a47c7]" started-at="2025-06-06T09:42:28 IST" name="reportclose" finished-at="2025-06-06T09:42:29 IST" duration-ms="551" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportclose -->
       </class> <!-- test.TC_001SignUpTest -->
       <class name="test.TC_002LoginTest">
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_002LoginTest@2cd76f31]" started-at="2025-03-21T10:11:36 IST" name="testDetails" finished-at="2025-03-21T10:11:36 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_002LoginTest@587e5365]" started-at="2025-06-06T09:40:55 IST" name="testDetails" finished-at="2025-06-06T09:40:55 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@2cd76f31]" started-at="2025-03-21T10:11:36 IST" name="lunchbrowser" finished-at="2025-03-21T10:11:49 IST" duration-ms="13528" status="PASS">
+        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_002LoginTest@587e5365]" started-at="2025-06-06T09:40:55 IST" name="lunchbrowser" finished-at="2025-06-06T09:40:59 IST" duration-ms="3960" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -65,21 +65,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchbrowser -->
-        <test-method signature="testLoginButton()[pri:0, instance:test.TC_002LoginTest@2cd76f31]" started-at="2025-03-21T10:11:49 IST" name="testLoginButton" finished-at="2025-03-21T10:11:54 IST" duration-ms="4647" status="PASS">
+        <test-method signature="testLoginButton()[pri:0, instance:test.TC_002LoginTest@587e5365]" started-at="2025-06-06T09:40:59 IST" name="testLoginButton" finished-at="2025-06-06T09:41:01 IST" duration-ms="1626" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginButton -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_002LoginTest@2cd76f31]" started-at="2025-03-21T10:11:54 IST" name="browserclose" finished-at="2025-03-21T10:11:55 IST" duration-ms="583" status="PASS">
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_002LoginTest@587e5365]" started-at="2025-06-06T09:41:01 IST" name="browserclose" finished-at="2025-06-06T09:41:01 IST" duration-ms="281" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
       </class> <!-- test.TC_002LoginTest -->
       <class name="test.TC_005CartPageTest">
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_005CartPageTest@ba2f4ec]" started-at="2025-03-21T10:12:16 IST" name="testDetails" finished-at="2025-03-21T10:12:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_005CartPageTest@63475ace]" started-at="2025-06-06T09:41:14 IST" name="testDetails" finished-at="2025-06-06T09:41:14 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_005CartPageTest@ba2f4ec]" started-at="2025-03-21T10:12:16 IST" name="lunchbrowser" finished-at="2025-03-21T10:12:22 IST" duration-ms="6012" status="PASS">
+        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_005CartPageTest@63475ace]" started-at="2025-06-06T09:41:14 IST" name="lunchbrowser" finished-at="2025-06-06T09:41:18 IST" duration-ms="3728" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -95,21 +95,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchbrowser -->
-        <test-method signature="testCartFunctionality()[pri:0, instance:test.TC_005CartPageTest@ba2f4ec]" started-at="2025-03-21T10:12:22 IST" name="testCartFunctionality" finished-at="2025-03-21T10:13:04 IST" duration-ms="42067" status="PASS">
+        <test-method signature="testCartFunctionality()[pri:0, instance:test.TC_005CartPageTest@63475ace]" started-at="2025-06-06T09:41:18 IST" name="testCartFunctionality" finished-at="2025-06-06T09:41:58 IST" duration-ms="39757" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCartFunctionality -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_005CartPageTest@ba2f4ec]" started-at="2025-03-21T10:13:05 IST" name="browserclose" finished-at="2025-03-21T10:13:05 IST" duration-ms="477" status="PASS">
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_005CartPageTest@63475ace]" started-at="2025-06-06T09:41:58 IST" name="browserclose" finished-at="2025-06-06T09:41:58 IST" duration-ms="184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
       </class> <!-- test.TC_005CartPageTest -->
       <class name="test.TC_003HomePageTest">
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_003HomePageTest@367ffa75]" started-at="2025-03-21T10:11:55 IST" name="testDetails" finished-at="2025-03-21T10:11:55 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_003HomePageTest@22fcf7ab]" started-at="2025-06-06T09:41:01 IST" name="testDetails" finished-at="2025-06-06T09:41:01 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_003HomePageTest@367ffa75]" started-at="2025-03-21T10:11:55 IST" name="lunchbrowser" finished-at="2025-03-21T10:12:03 IST" duration-ms="7996" status="PASS">
+        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_003HomePageTest@22fcf7ab]" started-at="2025-06-06T09:41:01 IST" name="lunchbrowser" finished-at="2025-06-06T09:41:05 IST" duration-ms="3732" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,21 +125,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchbrowser -->
-        <test-method signature="testApplicationLogoVisibility()[pri:0, instance:test.TC_003HomePageTest@367ffa75]" started-at="2025-03-21T10:12:03 IST" name="testApplicationLogoVisibility" finished-at="2025-03-21T10:12:04 IST" duration-ms="867" status="PASS">
+        <test-method signature="testApplicationLogoVisibility()[pri:0, instance:test.TC_003HomePageTest@22fcf7ab]" started-at="2025-06-06T09:41:05 IST" name="testApplicationLogoVisibility" finished-at="2025-06-06T09:41:05 IST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApplicationLogoVisibility -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_003HomePageTest@367ffa75]" started-at="2025-03-21T10:12:04 IST" name="browserclose" finished-at="2025-03-21T10:12:05 IST" duration-ms="603" status="PASS">
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_003HomePageTest@22fcf7ab]" started-at="2025-06-06T09:41:05 IST" name="browserclose" finished-at="2025-06-06T09:41:05 IST" duration-ms="231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
       </class> <!-- test.TC_003HomePageTest -->
       <class name="test.TC_007LogoutTest">
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_007LogoutTest@55fe41ea]" started-at="2025-03-21T10:13:26 IST" name="testDetails" finished-at="2025-03-21T10:13:26 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_007LogoutTest@c0c2f8d]" started-at="2025-06-06T09:42:11 IST" name="testDetails" finished-at="2025-06-06T09:42:11 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_007LogoutTest@55fe41ea]" started-at="2025-03-21T10:13:26 IST" name="lunchbrowser" finished-at="2025-03-21T10:13:32 IST" duration-ms="6337" status="PASS">
+        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_007LogoutTest@c0c2f8d]" started-at="2025-06-06T09:42:11 IST" name="lunchbrowser" finished-at="2025-06-06T09:42:15 IST" duration-ms="4156" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -155,21 +155,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchbrowser -->
-        <test-method signature="testLogoutFunctionality()[pri:0, instance:test.TC_007LogoutTest@55fe41ea]" started-at="2025-03-21T10:13:32 IST" name="testLogoutFunctionality" finished-at="2025-03-21T10:13:48 IST" duration-ms="15839" status="PASS">
+        <test-method signature="testLogoutFunctionality()[pri:0, instance:test.TC_007LogoutTest@c0c2f8d]" started-at="2025-06-06T09:42:15 IST" name="testLogoutFunctionality" finished-at="2025-06-06T09:42:28 IST" duration-ms="12836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogoutFunctionality -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_007LogoutTest@55fe41ea]" started-at="2025-03-21T10:13:48 IST" name="browserclose" finished-at="2025-03-21T10:13:49 IST" duration-ms="424" status="PASS">
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_007LogoutTest@c0c2f8d]" started-at="2025-06-06T09:42:28 IST" name="browserclose" finished-at="2025-06-06T09:42:28 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
       </class> <!-- test.TC_007LogoutTest -->
       <class name="test.TC_004ProductDetailsTest">
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_004ProductDetailsTest@49438269]" started-at="2025-03-21T10:12:05 IST" name="testDetails" finished-at="2025-03-21T10:12:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_004ProductDetailsTest@2de23121]" started-at="2025-06-06T09:41:05 IST" name="testDetails" finished-at="2025-06-06T09:41:05 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_004ProductDetailsTest@49438269]" started-at="2025-03-21T10:12:05 IST" name="lunchbrowser" finished-at="2025-03-21T10:12:11 IST" duration-ms="6074" status="PASS">
+        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_004ProductDetailsTest@2de23121]" started-at="2025-06-06T09:41:05 IST" name="lunchbrowser" finished-at="2025-06-06T09:41:09 IST" duration-ms="3652" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -185,21 +185,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchbrowser -->
-        <test-method signature="testAddProductToCart()[pri:0, instance:test.TC_004ProductDetailsTest@49438269]" started-at="2025-03-21T10:12:11 IST" name="testAddProductToCart" finished-at="2025-03-21T10:12:15 IST" duration-ms="4740" status="PASS">
+        <test-method signature="testAddProductToCart()[pri:0, instance:test.TC_004ProductDetailsTest@2de23121]" started-at="2025-06-06T09:41:09 IST" name="testAddProductToCart" finished-at="2025-06-06T09:41:14 IST" duration-ms="4398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddProductToCart -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_004ProductDetailsTest@49438269]" started-at="2025-03-21T10:12:16 IST" name="browserclose" finished-at="2025-03-21T10:12:16 IST" duration-ms="482" status="PASS">
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_004ProductDetailsTest@2de23121]" started-at="2025-06-06T09:41:14 IST" name="browserclose" finished-at="2025-06-06T09:41:14 IST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
       </class> <!-- test.TC_004ProductDetailsTest -->
       <class name="test.TC_006PlaceorderTest">
-        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_006PlaceorderTest@1c1bbc4e]" started-at="2025-03-21T10:13:05 IST" name="testDetails" finished-at="2025-03-21T10:13:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="testDetails()[pri:0, instance:test.TC_006PlaceorderTest@4988d8b8]" started-at="2025-06-06T09:41:58 IST" name="testDetails" finished-at="2025-06-06T09:41:58 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDetails -->
-        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_006PlaceorderTest@1c1bbc4e]" started-at="2025-03-21T10:13:05 IST" name="lunchbrowser" finished-at="2025-03-21T10:13:12 IST" duration-ms="6358" status="PASS">
+        <test-method is-config="true" signature="lunchbrowser(java.lang.String,java.lang.String)[pri:0, instance:test.TC_006PlaceorderTest@4988d8b8]" started-at="2025-06-06T09:41:58 IST" name="lunchbrowser" finished-at="2025-06-06T09:42:03 IST" duration-ms="4826" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -215,11 +215,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- lunchbrowser -->
-        <test-method signature="testPurchaseFunction()[pri:0, instance:test.TC_006PlaceorderTest@1c1bbc4e]" started-at="2025-03-21T10:13:12 IST" name="testPurchaseFunction" finished-at="2025-03-21T10:13:24 IST" duration-ms="12047" status="PASS">
+        <test-method signature="testPurchaseFunction()[pri:0, instance:test.TC_006PlaceorderTest@4988d8b8]" started-at="2025-06-06T09:42:03 IST" name="testPurchaseFunction" finished-at="2025-06-06T09:42:11 IST" duration-ms="7782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testPurchaseFunction -->
-        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_006PlaceorderTest@1c1bbc4e]" started-at="2025-03-21T10:13:24 IST" name="browserclose" finished-at="2025-03-21T10:13:26 IST" duration-ms="1798" status="PASS">
+        <test-method is-config="true" signature="browserclose()[pri:0, instance:test.TC_006PlaceorderTest@4988d8b8]" started-at="2025-06-06T09:42:11 IST" name="browserclose" finished-at="2025-06-06T09:42:11 IST" duration-ms="170" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserclose -->
