@@ -11,33 +11,42 @@ import page.ProductPage;
 
 public class TC_006PlaceorderTest extends ProjectSpecificationMethod {
 
-	@Test
-	public void testPurchaseFunction() {
-		Homepage homePage = new Homepage(driver);
-		homePage.clickProduct("Samsung galaxy s6"); // Click product
+    @Test
+    public void testPurchaseFunction() {
+        // Step 1: Navigate to the homepage and click on a product
+        Homepage homePage = new Homepage(driver);
+        homePage.clickProduct("Samsung galaxy s6");
 
-		ProductPage productPage = new ProductPage(driver);
-		productPage.addToCart(); // Add to cart
-		productPage.clickCartButton(); // Navigate to cart
+        // Step 2: Add the product to cart and handle alert
+        ProductPage productPage = new ProductPage(driver);
+        productPage.addToCart();
+        productPage.clickCartButton(); // Navigate to Cart Page
 
-		CartPage cartPage = new CartPage(driver);
-		Assert.assertTrue(cartPage.isProductInCart("Samsung galaxy s6"), "Product is not in cart!");
+        // Step 3: Verify the product is added to cart
+        CartPage cartPage = new CartPage(driver);
+        Assert.assertTrue(cartPage.isProductInCart("Samsung galaxy s6"), "❌ Product is not in cart!");
 
-		cartPage.clickPlaceOrder(); // Click Place Order
+        // Step 4: Click on 'Place Order'
+        cartPage.clickPlaceOrder();
 
-		PlaceOrderPage placeOrderPage = new PlaceOrderPage(driver);
-		Assert.assertTrue(placeOrderPage.isOrderFormDisplayed(), "Place Order window not displayed!");
+        // Step 5: Fill the order form
+        PlaceOrderPage placeOrderPage = new PlaceOrderPage(driver);
+        Assert.assertTrue(placeOrderPage.isOrderFormDisplayed(), "❌ Place Order form not displayed!");
 
-		// Fill in user details
-		placeOrderPage.enterName("Sivachandran");
-		placeOrderPage.enterCountry("India");
-		placeOrderPage.enterCity("Coimbatore");
-		placeOrderPage.enterCreditCard("4111111111111111");
-		placeOrderPage.enterMonth("03");
-		placeOrderPage.enterYear("2026");
+        placeOrderPage.enterName("Sivachandran");
+        placeOrderPage.enterCountry("India");
+        placeOrderPage.enterCity("Coimbatore");
+        placeOrderPage.enterCreditCard("4111111111111111");
+        placeOrderPage.enterMonth("03");
+        placeOrderPage.enterYear("2026");
 
-		placeOrderPage.clickPurchase(); // Complete the order
+        // Step 6: Submit the purchase
+        placeOrderPage.clickPurchase();
 
-		Assert.assertTrue(placeOrderPage.isPurchaseSuccessful(), "Order was not successful!");
-	}
+        // Step 7: Confirm the purchase success
+        Assert.assertTrue(placeOrderPage.isPurchaseSuccessful(), "❌ Order was not successful!");
+
+        // Optional: Click OK to close confirmation dialog
+        placeOrderPage.clickOkButton(); // Recommended to complete flow cleanly
+    }
 }

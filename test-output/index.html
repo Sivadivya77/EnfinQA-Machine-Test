@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="test.TC_001_SignUpTest" class="method navigator-link" hash-for-method="testExistingUser">testExistingUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,37 +117,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.TC_004ProductDetailsTest" class="method navigator-link" hash-for-method="testAddProductToCart">testAddProductToCart</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.TC_001_SignUpTest" class="method navigator-link" hash-for-method="testBlankPassword">testBlankPassword</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.TC_003HomePageTest" class="method navigator-link" hash-for-method="testApplicationLogoVisibility">testApplicationLogoVisibility</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.TC_001_SignUpTest" class="method navigator-link" hash-for-method="testBlankUsername">testBlankUsername</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.TC_005CartPageTest" class="method navigator-link" hash-for-method="testCartFunctionality">testCartFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.TC_002LoginTest" class="method navigator-link" hash-for-method="testLoginButton">testLoginButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.TC_007LogoutTest" class="method navigator-link" hash-for-method="testLogoutFunctionality">testLogoutFunctionality</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.TC_006PlaceorderTest" class="method navigator-link" hash-for-method="testPurchaseFunction">testPurchaseFunction</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="test.TC_001SignUpTest" class="method navigator-link" hash-for-method="testSignUpButtonVisibility">testSignUpButtonVisibility</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="test.TC_001_SignUpTest" class="method navigator-link" hash-for-method="testValidSignUp">testValidSignUp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -148,107 +142,51 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.TC_001SignUpTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">test.TC_001_SignUpTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testSignUpButtonVisibility">
-                  </a> <!-- testSignUpButtonVisibility -->
-                  <span class="method-name">testSignUpButtonVisibility</span>
+                  <a name="testExistingUser">
+                  </a> <!-- testExistingUser -->
+                  <span class="method-name">testExistingUser</span>
+                  <div class="stack-trace">java.lang.AssertionError: Existing user check failed. expected [true] but found [false]
+	at test.TC_001_SignUpTest.testExistingUser(TC_001_SignUpTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">test.TC_004ProductDetailsTest</span>
+              <span class="class-name">test.TC_001_SignUpTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testAddProductToCart">
-                  </a> <!-- testAddProductToCart -->
-                  <span class="method-name">testAddProductToCart</span>
+                  <a name="testBlankPassword">
+                  </a> <!-- testBlankPassword -->
+                  <span class="method-name">testBlankPassword</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.TC_007LogoutTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogoutFunctionality">
-                  </a> <!-- testLogoutFunctionality -->
-                  <span class="method-name">testLogoutFunctionality</span>
+                  <a name="testBlankUsername">
+                  </a> <!-- testBlankUsername -->
+                  <span class="method-name">testBlankUsername</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.TC_006PlaceorderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testPurchaseFunction">
-                  </a> <!-- testPurchaseFunction -->
-                  <span class="method-name">testPurchaseFunction</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.TC_003HomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testApplicationLogoVisibility">
-                  </a> <!-- testApplicationLogoVisibility -->
-                  <span class="method-name">testApplicationLogoVisibility</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.TC_005CartPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testCartFunctionality">
-                  </a> <!-- testCartFunctionality -->
-                  <span class="method-name">testCartFunctionality</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">test.TC_002LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testLoginButton">
-                  </a> <!-- testLoginButton -->
-                  <span class="method-name">testLoginButton</span>
+                  <a name="testValidSignUp">
+                  </a> <!-- testValidSignUp -->
+                  <span class="method-name">testValidSignUp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,14 +207,13 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;groups&gt;
+      &lt;run&gt;
+        &lt;exclude name=&quot;smoke&quot;/&gt;
+      &lt;/run&gt;
+    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;test.TC_001SignUpTest&quot;/&gt;
-      &lt;class name=&quot;test.TC_002LoginTest&quot;/&gt;
-      &lt;class name=&quot;test.TC_003HomePageTest&quot;/&gt;
-      &lt;class name=&quot;test.TC_004ProductDetailsTest&quot;/&gt;
-      &lt;class name=&quot;test.TC_005CartPageTest&quot;/&gt;
-      &lt;class name=&quot;test.TC_006PlaceorderTest&quot;/&gt;
-      &lt;class name=&quot;test.TC_007LogoutTest&quot;/&gt;
+      &lt;class name=&quot;test.TC_001_SignUpTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -290,7 +227,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (7 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -300,6 +237,22 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">testBlankPassword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testBlankUsername</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">testExistingUser</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -316,40 +269,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCartFunctionality')
-data.setCell(0, 2, 'test.TC_005CartPageTest')
-data.setCell(0, 3, 39757);
+data.setCell(0, 1, 'testBlankPassword')
+data.setCell(0, 2, 'test.TC_001_SignUpTest')
+data.setCell(0, 3, 4174);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testLogoutFunctionality')
-data.setCell(1, 2, 'test.TC_007LogoutTest')
-data.setCell(1, 3, 12836);
+data.setCell(1, 1, 'testBlankUsername')
+data.setCell(1, 2, 'test.TC_001_SignUpTest')
+data.setCell(1, 3, 4105);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testPurchaseFunction')
-data.setCell(2, 2, 'test.TC_006PlaceorderTest')
-data.setCell(2, 3, 7782);
+data.setCell(2, 1, 'testValidSignUp')
+data.setCell(2, 2, 'test.TC_001_SignUpTest')
+data.setCell(2, 3, 4100);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testAddProductToCart')
-data.setCell(3, 2, 'test.TC_004ProductDetailsTest')
-data.setCell(3, 3, 4398);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testLoginButton')
-data.setCell(4, 2, 'test.TC_002LoginTest')
-data.setCell(4, 3, 1626);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testSignUpButtonVisibility')
-data.setCell(5, 2, 'test.TC_001SignUpTest')
-data.setCell(5, 3, 390);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testApplicationLogoVisibility')
-data.setCell(6, 2, 'test.TC_003HomePageTest')
-data.setCell(6, 3, 227);
+data.setCell(3, 1, 'testExistingUser')
+data.setCell(3, 2, 'test.TC_001_SignUpTest')
+data.setCell(3, 3, 3742);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -364,63 +305,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">12 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.TC_004ProductDetailsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">reportiniatialization</span>
-                <br/>
-                <span class="ignored-method-name">reportclose</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.TC_007LogoutTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">reportiniatialization</span>
-                <br/>
-                <span class="ignored-method-name">reportclose</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.TC_006PlaceorderTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">reportiniatialization</span>
-                <br/>
-                <span class="ignored-method-name">reportclose</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.TC_003HomePageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">reportiniatialization</span>
-                <br/>
-                <span class="ignored-method-name">reportclose</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.TC_005CartPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">reportclose</span>
-                <br/>
-                <span class="ignored-method-name">reportiniatialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">test.TC_002LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">reportclose</span>
-                <br/>
-                <span class="ignored-method-name">reportiniatialization</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -429,147 +316,68 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">test.TC_001SignUpTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">test.TC_001_SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">reportiniatialization</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">testDetails</span>
-                <span class="method-start">553 ms</span>
+                <span class="method-start">607 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">lunchbrowser(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">579 ms</span>
+                <span class="method-start">648 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSignUpButtonVisibility</span>
-                <span class="method-start">11654 ms</span>
+                <span class="method-name">testValidSignUp</span>
+                <span class="method-start">8031 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserclose</span>
-                <span class="method-start">12297 ms</span>
+                <span class="method-start">12596 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TC_002LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">12537 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">lunchbrowser(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">12545 ms</span>
+                <span class="method-start">13215 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testLoginButton</span>
-                <span class="method-start">16505 ms</span>
+                <span class="method-name">testBlankUsername</span>
+                <span class="method-start">17755 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserclose</span>
-                <span class="method-start">18362 ms</span>
+                <span class="method-start">22169 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TC_003HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">18643 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">lunchbrowser(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">18645 ms</span>
+                <span class="method-start">22653 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testApplicationLogoVisibility</span>
-                <span class="method-start">22378 ms</span>
+                <span class="method-name">testBlankPassword</span>
+                <span class="method-start">27106 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserclose</span>
-                <span class="method-start">22769 ms</span>
+                <span class="method-start">31576 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TC_004ProductDetailsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">23001 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">lunchbrowser(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">23003 ms</span>
+                <span class="method-start">31965 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testAddProductToCart</span>
-                <span class="method-start">26655 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testExistingUser</span>
+                <span class="method-start">36015 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">browserclose</span>
-                <span class="method-start">31324 ms</span>
+                <span class="method-start">39964 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TC_005CartPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">31559 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">lunchbrowser(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">31561 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testCartFunctionality</span>
-                <span class="method-start">35289 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserclose</span>
-                <span class="method-start">75260 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TC_006PlaceorderTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">75445 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">lunchbrowser(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">75446 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testPurchaseFunction</span>
-                <span class="method-start">80272 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserclose</span>
-                <span class="method-start">88238 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TC_007LogoutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">testDetails</span>
-                <span class="method-start">88409 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">lunchbrowser(https://www.demoblaze.com/, chrome)</span>
-                <span class="method-start">88410 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testLogoutFunctionality</span>
-                <span class="method-start">92566 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">browserclose</span>
-                <span class="method-start">105630 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">test.TC_001SignUpTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">reportclose</span>
-                <span class="method-start">105936 ms</span>
+                <span class="method-start">40423 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

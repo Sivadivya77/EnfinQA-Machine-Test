@@ -3,16 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.TC_002LoginTest">
+      <class name="test.TC_001_SignUpTest">
         <methods>
-          <include name="testLoginButton"/>
+          <include name="testBlankUsername"/>
           <include name="browserclose"/>
+          <include name="testBlankPassword"/>
           <include name="reportiniatialization"/>
           <include name="reportclose"/>
           <include name="testDetails"/>
           <include name="lunchbrowser"/>
+          <include name="testExistingUser"/>
+          <include name="testValidSignUp"/>
         </methods>
-      </class> <!-- test.TC_002LoginTest -->
+      </class> <!-- test.TC_001_SignUpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

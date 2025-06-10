@@ -14,48 +14,64 @@ import base.ProjectSpecificationMethod;
 
 public class LogoutPage extends ProjectSpecificationMethod {
 
-	@FindBy(id = "logout2") // "Log out" button
+	// Locate the "Log out" button by its ID
+	@FindBy(id = "logout2")
 	private WebElement logoutButton;
 
-	@FindBy(id = "signin2") // "Sign up" button (appears after logout)
+	// Locate the "Sign up" button (which reappears after successful logout)
+	@FindBy(id = "signin2")
 	private WebElement signUpButton;
 
+	// Constructor: initializes elements using PageFactory
 	public LogoutPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	// Wait for and return Logout button
+	/**
+	 * Waits for the logout button to be visible and returns it.
+	 * Helps ensure the element is interactable before use.
+	 */
 	public WebElement getLogoutButton() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.visibilityOf(logoutButton));
 	}
 
-	// Check if Logout button is displayed
+	/**
+	 * Checks whether the logout button is currently displayed on the page.
+	 * Useful to validate if the user is logged in.
+	 */
 	public boolean isLogoutButtonDisplayed() {
 		try {
 			return logoutButton.isDisplayed();
 		} catch (Exception e) {
+			// Handles situations where the element is not present
 			return false;
 		}
 	}
 
-	// Click Logout
+	/**
+	 * Attempts to click the logout button.
+	 * Includes try-catch block for safe interaction and logging in case of failure.
+	 */
 	public void clickLogout() {
 		try {
 			logoutButton.click();
-			// handleUnexpectedAlert(); // Handle alert after clicking logout
+			// Optional: handle unexpected alert if logout triggers one
+			// handleUnexpectedAlert(); 
 		} catch (Exception e) {
 			System.out.println("Exception while clicking logout: " + e.getMessage());
 		}
 	}
 
-	// Verify redirection to Home Page after logout
+	/**
+	 * Validates whether the user is redirected to the homepage after logout.
+	 * It does this by checking the visibility of the Sign Up button.
+	 */
 	public boolean isRedirectedToHomePage() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.visibilityOf(signUpButton)).isDisplayed();
 	}
 
-	// Handle unexpected alerts
-
+	
 }

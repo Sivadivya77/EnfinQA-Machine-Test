@@ -7,27 +7,22 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <exclude name="smoke"/>
+      </run>
+    </groups>
     <classes>
-      <class name="test.TC_001SignUpTest">
+      <class name="test.TC_001_SignUpTest">
         <methods>
-          <include name="browserclose"/>
-          <include name="reportiniatialization"/>
-          <include name="reportclose"/>
-          <include name="testSignUpButtonVisibility"/>
-          <include name="testDetails"/>
-          <include name="lunchbrowser"/>
-        </methods>
-      </class> <!-- test.TC_001SignUpTest -->
-      <class name="test.TC_002LoginTest">
-        <methods>
-          <include name="testLoginButton"/>
           <include name="browserclose"/>
           <include name="reportiniatialization"/>
           <include name="reportclose"/>
           <include name="testDetails"/>
           <include name="lunchbrowser"/>
+          <include name="testExistingUser"/>
         </methods>
-      </class> <!-- test.TC_002LoginTest -->
+      </class> <!-- test.TC_001_SignUpTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

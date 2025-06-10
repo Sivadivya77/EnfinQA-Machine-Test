@@ -7,16 +7,25 @@
 	<parameter name="url" value="https://www.demoblaze.com/"></parameter>
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="chrome"></parameter>
+		<groups>
+		<run>
+		<exclude name="smoke"></exclude>
+		</run>
+		</groups>
 		<classes>
-			<class name="test.TC_001SignUpTest" />
-			<class name="test.TC_002LoginTest" />
-		<class name="test.TC_003HomePageTest" />
+			<class name="test.TC_001_SignUpTest" />
+		<!--	<class name="test.TC_002LoginTest" />
+		 <class name="test.TC_003HomePageTest" />
 			<class name="test.TC_004ProductDetailsTest" />
 			<class name="test.TC_005CartPageTest" />
 			<class name="test.TC_006PlaceorderTest" />
-			<class name="test.TC_007LogoutTest" />
+			<class name="test.TC_007LogoutTest" />-->
 		</classes>
-	</test> <!--
-	Test -->
-</suite> <!--
-Suite -->
+		
+		
+		
+		
+		
+		
+	</test> 
+</suite>

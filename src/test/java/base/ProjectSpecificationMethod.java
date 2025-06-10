@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -38,7 +39,7 @@ public class ProjectSpecificationMethod extends Utility {
 		LunchURL(url, browser);
 
 	}
-
+@Ignore
 	@AfterMethod
 	public void browserclose() {
 

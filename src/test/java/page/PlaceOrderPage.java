@@ -13,7 +13,8 @@ import base.ProjectSpecificationMethod;
 
 public class PlaceOrderPage extends ProjectSpecificationMethod {
 
-	// Locators for Place Order form fields
+	// === Locators for "Place Order" modal fields ===
+
 	@FindBy(id = "name")
 	private WebElement nameField;
 
@@ -36,34 +37,35 @@ public class PlaceOrderPage extends ProjectSpecificationMethod {
 	private WebElement purchaseButton;
 
 	@FindBy(className = "sweet-alert")
-	private WebElement successMessage;
+	private WebElement successMessage; // Confirmation dialog container
 
 	@FindBy(xpath = "//h2[contains(text(),'Thank you for your purchase!')]")
-	private WebElement confirmationMessage;
+	private WebElement confirmationMessage; // Actual message inside confirmation dialog
 
 	@FindBy(xpath = "//button[text()='OK']")
 	private WebElement okButton;
 
 	@FindBy(id = "orderModal")
-	private WebElement orderModal;
+	private WebElement orderModal; // The popup/modal for placing order
 
+	// === Constructor: Initializes the PageFactory with WebDriver instance ===
 	public PlaceOrderPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	// Check if the Place Order form is displayed
+	// === Checks if the Place Order form/modal is visible ===
 	public boolean isOrderFormDisplayed() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {
-			wait.until(ExpectedConditions.visibilityOf(orderModal)); // Wait for modal
+			wait.until(ExpectedConditions.visibilityOf(orderModal)); // Waits until modal is visible
 			return orderModal.isDisplayed();
 		} catch (Exception e) {
-			return false; // If not displayed, return false
+			return false; // If modal is not displayed
 		}
 	}
 
-	// Enter user details in the order form
+	// === Form field methods: Inputs user details ===
 	public void enterName(String name) {
 		nameField.sendKeys(name);
 	}
@@ -88,19 +90,18 @@ public class PlaceOrderPage extends ProjectSpecificationMethod {
 		yearField.sendKeys(year);
 	}
 
-	// Click the Purchase button
+	// === Clicks the Purchase button to submit the order ===
 	public void clickPurchase() {
 		purchaseButton.click();
 	}
 
-	// Verify if the purchase is successful
+	// === Verifies whether the purchase was successful by checking confirmation message ===
 	public boolean isPurchaseSuccessful() {
 		return confirmationMessage.isDisplayed();
 	}
 
-	// Click OK on the success alert
+	// === Clicks the OK button on the confirmation dialog ===
 	public void clickOkButton() {
 		okButton.click();
 	}
-
 }
